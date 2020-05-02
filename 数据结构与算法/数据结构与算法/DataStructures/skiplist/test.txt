@@ -1,0 +1,150 @@
+insert: 0.000000
+find: 0.000000
+delete: 0.000000
+number: 10
+
+insert: 0.030000
+find: 0.023000
+delete: 0.030000
+number: 100010
+
+insert: 0.074000
+find: 0.048000
+delete: 0.073000
+number: 200010
+
+insert: 0.131000
+find: 0.072000
+delete: 0.128000
+number: 300010
+
+insert: 0.179000
+find: 0.100000
+delete: 0.208000
+number: 400010
+
+insert: 0.254000
+find: 0.139000
+delete: 0.274000
+number: 500010
+
+insert: 0.327000
+find: 0.155000
+delete: 0.376000
+number: 600010
+
+insert: 0.429000
+find: 0.184000
+delete: 0.520000
+number: 700010
+
+insert: 0.547000
+find: 0.203000
+delete: 0.581000
+number: 800010
+
+insert: 0.605000
+find: 0.229000
+delete: 0.655000
+number: 900010
+
+insert: 0.699000
+find: 0.266000
+delete: 0.766000
+number: 1000010
+
+insert: 0.795000
+find: 0.301000
+delete: 0.881000
+number: 1100010
+
+insert: 0.894000
+find: 0.317000
+delete: 0.975000
+number: 1200010
+
+insert: 0.980000
+find: 0.353000
+delete: 1.074000
+number: 1300010
+
+insert: 1.070000
+find: 0.385000
+delete: 1.192000
+number: 1400010
+
+insert: 1.181000
+find: 0.403000
+delete: 1.325000
+number: 1500010
+
+insert: 1.276000
+find: 0.425000
+delete: 1.421000
+number: 1600010
+
+insert: 1.395000
+find: 0.467000
+delete: 1.546000
+number: 1700010
+
+insert: 1.516000
+find: 0.489000
+delete: 1.659000
+number: 1800010
+
+insert: 1.551000
+find: 0.483000
+delete: 1.719000
+number: 1900010
+
+insert: 1.701000
+find: 0.532000
+delete: 1.824000
+number: 2000010
+
+insert: 1.769000
+find: 0.559000
+delete: 1.946000
+number: 2100010
+
+insert: 1.896000
+find: 0.595000
+delete: 2.074000
+number: 2200010
+
+insert: 1.978000
+find: 0.626000
+delete: 2.183000
+number: 2300010
+
+insert: 2.104000
+find: 0.657000
+delete: 2.311000
+number: 2400010
+
+insert: 2.259000
+find: 0.693000
+delete: 2.564000
+number: 2500010
+
+insert: 2.370000
+find: 0.728000
+delete: 2.551000
+number: 2600010
+
+insert: 2.484000
+find: 0.739000
+delete: 2.736000
+number: 2700010
+
+insert: 2.534000
+find: 0.768000
+delete: 2.803000
+number: 2800010
+
+insert: 2.687000
+find: 0.789000
+delete: 2.964000
+number: 2900010
+
