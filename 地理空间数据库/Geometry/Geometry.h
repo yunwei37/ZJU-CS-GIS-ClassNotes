@@ -33,7 +33,7 @@ public:
 
 	bool contain(double x, double y) const;
 
-	void draw() const;
+	//void draw() const;
 
 	void print() const { cout << "Envelope( " << minX << " " << maxX << " " << minY << " " << maxY << ") "; }
 
@@ -95,7 +95,7 @@ public:
 	// intersection test with the envelope for range query
 	virtual bool intersects(const Envelope& rect)  const;
 
-	virtual void draw()  const;
+	//virtual void draw()  const;
 
 	virtual void print() const { cout << "Point(" << x << " " << y << ")"; }
 };
@@ -122,7 +122,7 @@ public:
 	// intersection test with the envelope for range query
 	virtual bool intersects(const Envelope& rect)  const;
 
-	virtual void draw()  const;
+	//virtual void draw()  const;
 
 	virtual void print() const;
 };
@@ -151,7 +151,7 @@ public:
 	// intersection test with the envelope for range query
 	virtual bool intersects(const Envelope& rect)  const;
 
-	virtual void draw()  const;
+	//virtual void draw()  const;
 
 	virtual void print() const;
 };
@@ -178,7 +178,7 @@ public:
 	// intersection test with the envelope for range query
 	virtual bool intersects(const Envelope& rect)  const;
 
-	virtual void draw()  const;
+	//virtual void draw()  const;
 
 	virtual void print() const;
 };

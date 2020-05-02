@@ -24,7 +24,7 @@ bool Envelope::contain(const Envelope& envelope) const
 
 bool Envelope::intersect(const Envelope& envelope) const
 {
-	// Task 3.2 ²âÊÔEnvelopeÊÇ·ñÏà½»
+	// Task 3.2 ï¿½ï¿½ï¿½ï¿½Envelopeï¿½Ç·ï¿½ï¿½à½»
 	// Write your code here
 	bool flag = (envelope.getMaxX() < minX) || (envelope.getMinX() > maxX)
 		|| (envelope.getMaxY() < minY) || (envelope.getMinY() > maxY);
@@ -33,13 +33,13 @@ bool Envelope::intersect(const Envelope& envelope) const
 
 Envelope Envelope::unionEnvelope(const Envelope& envelope) const
 {
-	// Task 3.3 ºÏ²¢Á½¸öEnvelopeÉú³ÉÒ»¸öÐÂµÄEnvelope
+	// Task 3.3 ï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½Envelopeï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Âµï¿½Envelope
 	// Write your code here
 	Envelope e(min<double>(minX, envelope.getMinX()), max<double>(maxX, envelope.getMaxX())
 		, min<double>(minY, envelope.getMinY()), max<double>(maxY, envelope.getMaxY()));
 	return e;
 }
-
+/*
 void Envelope::draw() const
 {
 	glBegin(GL_LINE_STRIP);
@@ -52,14 +52,14 @@ void Envelope::draw() const
 
 	glEnd();
 }
-
+*/
 
 /*
  * Points functions
  */
 double Point::distanceOnSphere(const Point* point) const
 {
-	// Task 8 ¼ÆËãÁ½µãÖ®¼äµÄÇòÃæ¾àÀë(km)
+	// Task 8 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(km)
 	double R  = 6367;
 	double PI = 3.14159265358979323846;
 	double f = PI / 180;
@@ -127,7 +127,7 @@ bool Point::intersects(const Envelope& rect)  const
 {
 	return (x >= rect.getMinX()) && (x <= rect.getMaxX()) && (y >= rect.getMinY()) && (y <= rect.getMaxY());
 }
-
+/*
 void Point::draw()  const
 {
 	glBegin(GL_POINTS);
@@ -135,7 +135,7 @@ void Point::draw()  const
 	glEnd();
 }
 
-
+*/
 /*
  * LineString functions
  */
@@ -194,7 +194,7 @@ OutCode ComputeOutCode(double x, double y, double xmin, double xmax, double ymin
 	return code;
 }
 
-// Cohen¨CSutherland clipping algorithm clips a line from
+// Cohenï¿½CSutherland clipping algorithm clips a line from
 // P0 = (x0, y0) to P1 = (x1, y1) against a rectangle with 
 // diagonal from (xmin, ymin) to (xmax, ymax).
 bool intersectTest(double x0, double y0, double x1, double y1, double xmin, double xmax, double ymin, double ymax)
@@ -276,7 +276,7 @@ bool LineString::intersects(const Envelope& rect)  const
 			return true;
 	return false;
 }
-
+/*
 void LineString::draw()  const
 {
 	glBegin(GL_LINE_STRIP);
@@ -284,7 +284,7 @@ void LineString::draw()  const
 		glVertex2d(points[i].getX(), points[i].getY());
 	glEnd();
 }
-
+*/
 void LineString::print() const
 {
 	cout << "LineString(";
@@ -309,12 +309,12 @@ bool Polygon::intersects(const Envelope& rect)  const
 	cout << "to be implemented: Polygon::intersects(const Envelope& box)\n";
 	return true;
 }
-
+/*
 void Polygon::draw() const
 {
 	exteriorRing.draw();
 }
-
+*/
 void Polygon::print() const
 {
 	cout << "Polygon(";
@@ -380,7 +380,7 @@ bool MultiPoint::intersects(const Envelope& rect) const
 	}
 	return flag;
 }
-
+/*
 void MultiPoint::draw() const
 {	
 	for (auto p : points) {
@@ -389,7 +389,7 @@ void MultiPoint::draw() const
 		glEnd();
 	}
 }
-
+*/
 void MultiPoint::print() const
 {	
 	for (auto p : points) {

@@ -102,7 +102,7 @@ QuadNode* QuadNode::pointInLeafNode(double x, double y)
 	}
 	return NULL;
 }
-
+/*
 void QuadNode::draw()
 {
 	if (isLeafNode()) {
@@ -113,7 +113,7 @@ void QuadNode::draw()
 			nodes[i]->draw();
 	}
 }
-
+*/
 /*
  * QuadTree
  */
@@ -135,7 +135,7 @@ bool QuadTree::constructQuadTree(vector<Feature>& features)
 
 	root->split(capacity);
 
-	bbox = e; // ×¢Òâ´ËĞĞ´úÂëĞèÒª¸üĞÂÎªfeaturesµÄ°üÎ§ºĞ£¬»ò¸ù½ÚµãµÄ°üÎ§ºĞ
+	bbox = e; // ×¢ï¿½ï¿½ï¿½ï¿½Ğ´ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Îªfeaturesï¿½Ä°ï¿½Î§ï¿½Ğ£ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½Ä°ï¿½Î§ï¿½ï¿½
 	//bbox = Envelope(-74.1, -73.8, 40.6, 40.8);
 	return true;
 }
@@ -161,15 +161,15 @@ void QuadTree::rangeQuery(Envelope& rect, vector<Feature>& features)
 
 	// Task 6.1 range query
 	// Write your code here
-	// filter step (Ñ¡Ôñ²éÑ¯ÇøÓòÓë¼¸ºÎ¶ÔÏó°üÎ§ºĞÏà½»µÄ¼¸ºÎ¶ÔÏó)
+	// filter step (Ñ¡ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ë¼¸ï¿½Î¶ï¿½ï¿½ï¿½ï¿½Î§ï¿½ï¿½ï¿½à½»ï¿½Ä¼ï¿½ï¿½Î¶ï¿½ï¿½ï¿½)
 	vector<Feature> features1;
 	root->rangeQuery(rect, features1);
-	// refine step (¾«È·ÅĞ¶ÏÊ±£¬ĞèÒªÈ¥ÖØ£¬±ÜÃâ²éÑ¯ÇøÓòºÍ¼¸ºÎ¶ÔÏóµÄÖØ¸´¼ÆËã)
+	// refine step (ï¿½ï¿½È·ï¿½Ğ¶ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ÒªÈ¥ï¿½Ø£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Î¶ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½ï¿½ï¿½ï¿½ï¿½)
 
 	set<Feature> featureMap;
 	for (auto f : features1) {
 		if (featureMap.find(f) == featureMap.end()) {
-			if(f.getGeom()->intersects(rect)) // refine ¾«È·ÅĞ¶Ï
+			if(f.getGeom()->intersects(rect)) // refine ï¿½ï¿½È·ï¿½Ğ¶ï¿½
 				features.push_back(f);
 			featureMap.insert(f);
 		}
@@ -184,7 +184,7 @@ bool QuadTree::NNQuery(double x, double y, Feature& feature)
 	// Task 7.1 NN query
 	// Write your code here
 
-	// filter step (Ê¹ÓÃmaxDistance2Envelopeº¯Êı£¬»ñµÃ²éÑ¯µãµ½¼¸ºÎ¶ÔÏó°üÎ§ºĞµÄ×î¶ÌµÄ×î´ó¾àÀë£¬È»ºóÇøÓò²éÑ¯»ñµÃºòÑ¡¼¯)
+	// filter step (Ê¹ï¿½ï¿½maxDistance2Envelopeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã²ï¿½Ñ¯ï¿½ãµ½ï¿½ï¿½ï¿½Î¶ï¿½ï¿½ï¿½ï¿½Î§ï¿½Ğµï¿½ï¿½ï¿½Ìµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë£¬È»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½Ãºï¿½Ñ¡ï¿½ï¿½)
 
 	const Envelope& envelope = root->getEnvelope();
 	double minDist = max(envelope.getWidth(), envelope.getHeight());
@@ -197,7 +197,7 @@ bool QuadTree::NNQuery(double x, double y, Feature& feature)
 	Envelope rect = Envelope(x - minDist, x + minDist, y - minDist, y + minDist);
 	vector< Feature> features;
 	rangeQuery(rect, features);
-	// refine step (¾«È·¼ÆËã²éÑ¯µãÓë¼¸ºÎ¶ÔÏóµÄ¾àÀë)
+	// refine step (ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ë¼¸ï¿½Î¶ï¿½ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½)
 	double dist;
 	for (Feature f : features) {
 		dist = f.getGeom()->distance(&Point(x, y));
@@ -209,11 +209,11 @@ bool QuadTree::NNQuery(double x, double y, Feature& feature)
 
 	return true;
 }
-
+/*
 void QuadTree::draw()
 {
 	if (root)
 		root->draw();
 }
-
+*/
 }

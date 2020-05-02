@@ -15,7 +15,7 @@ void zorder(int order, int& value, int coor[2])
 	value = 0;
 	for (int i = 0; i < 2; ++i) {
 		for (int j = 0; j < order; ++j) {
-			// Task 1.1 zorder£¬ÐÞ¸ÄÒÔÏÂ´úÂë
+			// Task 1.1 zorderï¿½ï¿½ï¿½Þ¸ï¿½ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½
 			int mask = 1<<j;
 			// Check whether the value in the position is 1
 			if (coor[1-i] & mask)
@@ -37,7 +37,7 @@ void izorder(int order, int value, int coor[2])
 	// Write your code here
 	for (int i = 0; i < 2; ++i) {
 		for (int j = 0; j < order; ++j) {
-			// Task 1.1 zorder£¬ÐÞ¸ÄÒÔÏÂ´úÂë
+			// Task 1.1 zorderï¿½ï¿½ï¿½Þ¸ï¿½ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½
 			int mask = 1 << j*2+i;
 			// Check whether the value in the position is 1
 			if (value & mask)
@@ -72,7 +72,7 @@ int zdist(int order)
 /*
  * zrender - Render Z-Curve with the given order, width and height
  */
-
+/*
 void zrender(int order, int width, int height)
 {
 	int num = int(pow(2, order));
@@ -93,7 +93,7 @@ void zrender(int order, int width, int height)
 		pointA[1] = pointB[1];
 	}
 }
-
+*/
 /*
  * horder - Calculate the index number (H-value) of the point (represented by coordinate) in Hilbert curve with given order
  */
@@ -117,7 +117,7 @@ void horder(int order, int& value, int coor[2])
 
 		for (int j = 0; j < blockLen; ++j) {
 			for (int k = 0; k < blockLen; ++k) {
-				// Task 2.1 horder£¬ÐÞ¸ÄÒÔÏÂËÄÐÐ´úÂë
+				// Task 2.1 horderï¿½ï¿½ï¿½Þ¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½
 				hcurve[j * num + k] = temp[j * blockLen + k] + add;
 				hcurve[j * num + k + blockLen] = temp[j * blockLen + k] + add*2;
 				hcurve[(j + blockLen) * num + k] = temp[(blockLen - k-1) * blockLen + (blockLen - j-1)] + 0;
@@ -128,7 +128,7 @@ void horder(int order, int& value, int coor[2])
 		delete temp;
     }
 
-	// Task 2.1 horder£¬ÐÞ¸ÄÒÔÏÂÒ»ÐÐ´úÂë
+	// Task 2.1 horderï¿½ï¿½ï¿½Þ¸ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Ð´ï¿½ï¿½ï¿½
 	value = hcurve[num*(num - coor[1] - 1)+coor[0]];
 	delete[] hcurve;
 }
@@ -156,7 +156,7 @@ void ihorder(int order, int value, int coor[2])
 
 		for (int j = 0; j < blockLen; ++j) {
 			for (int k = 0; k < blockLen; ++k) {
-				// Task 2.1 horder£¬ÐÞ¸ÄÒÔÏÂËÄÐÐ´úÂë
+				// Task 2.1 horderï¿½ï¿½ï¿½Þ¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½
 				hcurve[j * num + k] = temp[j * blockLen + k] + add;
 				hcurve[j * num + k + blockLen] = temp[j * blockLen + k] + add * 2;
 				hcurve[(j + blockLen) * num + k] = temp[(blockLen - k - 1) * blockLen + (blockLen - j - 1)] + 0;
@@ -203,7 +203,7 @@ int hdist(int order)
 /*
  * hrender - Render Hilbert Curve with the given order, width and height
  */
-
+/*
 void hrender(int order, int width, int height)
 {
 	int num = int(pow(2, order));
@@ -224,5 +224,5 @@ void hrender(int order, int width, int height)
 		pointA[1] = pointB[1];
 	}
 }
-
+*/
 }

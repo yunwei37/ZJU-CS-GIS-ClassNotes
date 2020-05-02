@@ -25,7 +25,7 @@ public:
 
 	bool resetMean();
 
-	void draw();
+	//void draw();
 
 	void print();
 };
@@ -38,7 +38,7 @@ public:
 
 	void cluster(vector<Feature>& features, int k, int maxIterNum = 100000);
 
-	void draw();
+	//void draw();
 
 	void print();
 };
