@@ -1,5 +1,4 @@
 #include "KMeans.h"
-#include <gl/freeglut.h> 
 
 /*
  * Cluster functions

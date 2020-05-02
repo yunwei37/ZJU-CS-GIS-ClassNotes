@@ -1,6 +1,5 @@
 #include "Geometry.h"
 #include <cmath>
-#include <gl/freeglut.h> 
 
 #define NOT_IMPLEMENT -1.0
 

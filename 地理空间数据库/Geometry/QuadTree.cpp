@@ -1,6 +1,5 @@
 #include <set>
 #include "QuadTree.h"
-#include <unordered_set>
 #include <map>
 
 namespace lab3 {

@@ -1,7 +1,6 @@
 #include <cmath>
 #include <algorithm>
 #include "Curve.h"
-#include <gl/freeglut.h> 
 using namespace std;
 
 namespace lab3 {
