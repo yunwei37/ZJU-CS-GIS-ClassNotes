@@ -64,7 +64,7 @@ public:
 	virtual double   distance(const LineString* line) const = 0;
 	virtual double   distance(const Polygon* polygon) const = 0;
 	virtual bool     intersects(const Envelope& rect) const = 0;
-	virtual void	 draw()                           const = 0;
+	//virtual void	 draw()                           const = 0;
 	virtual void     print()                          const = 0;
 };
 

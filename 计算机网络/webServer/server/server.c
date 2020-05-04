@@ -1,4 +1,4 @@
-#include "../socketChat.h"
+#include "socketChat.h"
 
 void *thread_function(void *arg);
 

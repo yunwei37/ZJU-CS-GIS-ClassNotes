@@ -8,8 +8,8 @@ CFLAGS = -g -D_REENTRANT -Wall
 # Others systems will probably require something different.
 LIB = -lpthread
 
-app: server.c  ../rio.c  ../socketChat.h
-	gcc $(CFLAGS) -o ser server.c ../rio.c $(LIB) 
+app: server.c  rio.c  socketChat.h
+	gcc $(CFLAGS) -o ser server.c rio.c $(LIB) 
 
 clean:
 	rm -f app

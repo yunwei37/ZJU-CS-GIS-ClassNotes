@@ -1,7 +1,7 @@
 #ifndef KMEANS_H_INCLUDED
 #define KMEANS_H_INCLUDED
 
-#include "common.h"
+#include "global.h"
 
 #include <vector>
 #include <iostream>
