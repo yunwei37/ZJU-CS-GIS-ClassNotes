@@ -2,6 +2,8 @@
 ## 编译原理的课程作业
 
 - project
+    - 用c语言在600行以内实现的简单的解释器：[tryC](https://github.com/yunwei37/tryC)
+    - 编译原理大作业
 
 - notes
 
