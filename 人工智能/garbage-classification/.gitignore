@@ -1,0 +1,8 @@
+.idea/
+*.pyc
+*.swp
+.DS_Store
+.vscode
+/.localenv/
+/datasets/
+/.ipynb_checkpoints/
