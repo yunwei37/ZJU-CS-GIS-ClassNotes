@@ -1,0 +1,17 @@
+# This the configuration for PC-1
+
+#
+
+# Uncomment the following line to enable DHCP
+
+# dhcp
+
+# or the line below to manually setup an IP address and subnet mask
+
+ip 10.0.0.1/24 10.0.0.2
+
+#
+
+
+
+set pcname PC-1

@@ -1,0 +1,134 @@
+Jan 08 23:09:14.348 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jan 08 23:09:14.349 HYPERVISOR: Started on IP = localhost, TCP port = 43961.
+Jan 08 23:09:14.809 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 08 23:09:14.810 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\云微\Desktop\新建文件夹\untitled\project-files\dynamips 
+Jan 08 23:09:14.810 GENERAL: working_dir=C:\Users\云微\Desktop\新建文件夹\untitled\project-files\dynamips
+Jan 08 23:09:14.810 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\云微\Desktop\新建文件夹\untitled\project-files\dynamips\dd417058-fd19-47e0-a31d-8525cd493818 
+Jan 08 23:09:14.811 GENERAL: working_dir=C:\Users\云微\Desktop\新建文件夹\untitled\project-files\dynamips\dd417058-fd19-47e0-a31d-8525cd493818
+Jan 08 23:09:14.811 HYPERVISOR: exec_cmd: vm create R-8 6 c3745 
+Jan 08 23:09:14.812 VM: VM R-8 created.
+Jan 08 23:09:14.812 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-8 5012 
+Jan 08 23:09:14.812 HYPERVISOR: exec_cmd: c3745 get_mac_addr R-8 
+Jan 08 23:09:14.812 HYPERVISOR: exec_cmd: vm set_disk0 R-8 0 
+Jan 08 23:09:14.813 HYPERVISOR: exec_cmd: vm set_exec_area R-8 64 
+Jan 08 23:09:14.813 HYPERVISOR: exec_cmd: vm get_status R-8 
+Jan 08 23:09:14.813 HYPERVISOR: exec_cmd: vm set_idle_pc R-8 0x60aa1da0 
+Jan 08 23:09:14.814 HYPERVISOR: exec_cmd: vm set_ios R-8 C:/Users/云微/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Jan 08 23:09:14.814 HYPERVISOR: exec_cmd: c3745 set_mac_addr R-8 c406.4944.0000 
+Jan 08 23:09:14.815 HYPERVISOR: exec_cmd: vm set_nvram R-8 256 
+Jan 08 23:09:14.815 HYPERVISOR: exec_cmd: vm set_ram R-8 256 
+Jan 08 23:09:14.815 HYPERVISOR: exec_cmd: vm get_status R-8 
+Jan 08 23:09:14.816 HYPERVISOR: exec_cmd: vm slot_add_binding R-8 1 0 NM-1FE-TX 
+Jan 08 23:09:14.816 HYPERVISOR: exec_cmd: vm get_status R-8 
+Jan 08 23:09:14.816 HYPERVISOR: exec_cmd: vm slot_add_binding R-8 2 0 NM-4T 
+Jan 08 23:09:14.816 HYPERVISOR: exec_cmd: vm slot_add_binding R-8 0 16 WIC-1T 
+Jan 08 23:09:14.817 HYPERVISOR: exec_cmd: vm slot_add_binding R-8 0 32 WIC-1T 
+Jan 08 23:09:14.817 HYPERVISOR: exec_cmd: vm slot_add_binding R-8 0 48 WIC-1T 
+Jan 08 23:09:19.776 HYPERVISOR: exec_cmd: nio create_udp udp-ff25c20c-606c-44ef-8195-e9570b54d140 10040 127.0.0.1 10041 
+Jan 08 23:09:20.072 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-8 0 1 udp-ff25c20c-606c-44ef-8195-e9570b54d140 
+Jan 08 23:09:20.072 HYPERVISOR: exec_cmd: vm get_status R-8 
+Jan 08 23:09:20.127 HYPERVISOR: exec_cmd: nio create_udp udp-eb778ad4-c3d6-4ce6-aa73-6dbdc92a37fe 10044 127.0.0.1 10045 
+Jan 08 23:09:20.137 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-8 1 0 udp-eb778ad4-c3d6-4ce6-aa73-6dbdc92a37fe 
+Jan 08 23:09:20.137 HYPERVISOR: exec_cmd: vm get_status R-8 
+Jan 08 23:09:20.199 HYPERVISOR: exec_cmd: nio create_udp udp-6a2a8340-61a2-4043-bb0c-456edd851b85 10048 127.0.0.1 10049 
+Jan 08 23:09:20.201 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-8 0 0 udp-6a2a8340-61a2-4043-bb0c-456edd851b85 
+Jan 08 23:09:20.201 HYPERVISOR: exec_cmd: vm get_status R-8 
+Jan 08 23:16:09.857 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Jan 08 23:16:09.859 VM: VM Ghost created.
+Jan 08 23:16:09.859 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/云微/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Jan 08 23:16:09.860 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 08 23:16:09.861 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\云微\Desktop\新建文件夹\untitled\project-files\dynamips\c3745-adventerprisek9-mz.124-25d.image-256.ghost' 
+Jan 08 23:16:09.861 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Jan 08 23:16:09.862 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 08 23:16:09.862 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jan 08 23:16:09.863 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 08 23:16:10.114 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 08 23:16:10.279 VM: VM Ghost shutdown.
+Jan 08 23:16:10.279 VM: VM Ghost destroyed.
+Jan 08 23:16:10.292 HYPERVISOR: exec_cmd: vm get_status R-8 
+Jan 08 23:16:10.294 HYPERVISOR: exec_cmd: vm set_config R-8 configs\i6_startup-config.cfg configs\i6_private-config.cfg 
+Jan 08 23:16:10.294 HYPERVISOR: exec_cmd: vm start R-8 
+Jan 08 23:48:50.566 HYPERVISOR: exec_cmd: vm set_ios R-8 C:/Users/云微/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Jan 09 00:03:18.817 HYPERVISOR: exec_cmd: vm get_status R-8 
+Jan 09 00:03:18.817 HYPERVISOR: exec_cmd: vm stop R-8 
+Jan 09 00:03:18.914 VM: VM R-8 shutdown.
+Jan 09 00:03:18.914 HYPERVISOR: exec_cmd: vm extract_config R-8 
+Jan 09 00:03:26.084 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Jan 09 00:03:26.085 VM: VM Ghost created.
+Jan 09 00:03:26.086 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/云微/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Jan 09 00:03:26.086 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 09 00:03:26.087 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\云微\Desktop\新建文件夹\untitled\project-files\dynamips\c3745-adventerprisek9-mz.124-25d.image-256.ghost' 
+Jan 09 00:03:26.087 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Jan 09 00:03:26.087 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 09 00:03:26.088 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jan 09 00:03:26.088 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 09 00:03:26.351 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 09 00:03:26.513 VM: VM Ghost shutdown.
+Jan 09 00:03:26.513 VM: VM Ghost destroyed.
+Jan 09 00:03:26.523 HYPERVISOR: exec_cmd: vm get_status R-8 
+Jan 09 00:03:26.525 HYPERVISOR: exec_cmd: vm set_config R-8 configs\i6_startup-config.cfg configs\i6_private-config.cfg 
+Jan 09 00:03:26.526 HYPERVISOR: exec_cmd: vm start R-8 
+Jan 09 00:11:48.840 HYPERVISOR: exec_cmd: vm get_status R-8 
+Jan 09 00:11:48.840 HYPERVISOR: exec_cmd: vm stop R-8 
+Jan 09 00:11:48.939 VM: VM R-8 shutdown.
+Jan 09 00:11:48.941 HYPERVISOR: exec_cmd: vm extract_config R-8 
+Jan 09 00:11:52.096 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Jan 09 00:11:52.098 VM: VM Ghost created.
+Jan 09 00:11:52.099 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/云微/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Jan 09 00:11:52.099 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 09 00:11:52.100 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\云微\Desktop\新建文件夹\untitled\project-files\dynamips\c3745-adventerprisek9-mz.124-25d.image-256.ghost' 
+Jan 09 00:11:52.100 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Jan 09 00:11:52.100 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 09 00:11:52.101 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jan 09 00:11:52.101 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 09 00:11:52.360 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 09 00:11:52.526 VM: VM Ghost shutdown.
+Jan 09 00:11:52.526 VM: VM Ghost destroyed.
+Jan 09 00:11:52.535 HYPERVISOR: exec_cmd: vm get_status R-8 
+Jan 09 00:11:52.537 HYPERVISOR: exec_cmd: vm set_config R-8 configs\i6_startup-config.cfg configs\i6_private-config.cfg 
+Jan 09 00:11:52.537 HYPERVISOR: exec_cmd: vm start R-8 
+Jan 09 00:15:17.898 HYPERVISOR: exec_cmd: vm get_status R-8 
+Jan 09 00:15:17.899 HYPERVISOR: exec_cmd: vm stop R-8 
+Jan 09 00:15:17.987 VM: VM R-8 shutdown.
+Jan 09 00:15:17.989 HYPERVISOR: exec_cmd: vm extract_config R-8 
+Jan 09 00:16:10.351 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Jan 09 00:16:10.353 VM: VM Ghost created.
+Jan 09 00:16:10.354 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/云微/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Jan 09 00:16:10.354 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 09 00:16:10.354 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\云微\Desktop\新建文件夹\untitled\project-files\dynamips\c3745-adventerprisek9-mz.124-25d.image-256.ghost' 
+Jan 09 00:16:10.355 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Jan 09 00:16:10.355 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 09 00:16:10.356 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jan 09 00:16:10.356 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 09 00:16:10.614 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 09 00:16:10.781 VM: VM Ghost shutdown.
+Jan 09 00:16:10.781 VM: VM Ghost destroyed.
+Jan 09 00:16:10.792 HYPERVISOR: exec_cmd: vm get_status R-8 
+Jan 09 00:16:10.794 HYPERVISOR: exec_cmd: vm set_config R-8 configs\i6_startup-config.cfg configs\i6_private-config.cfg 
+Jan 09 00:16:10.795 HYPERVISOR: exec_cmd: vm start R-8 
+Jan 09 00:28:13.897 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Jan 09 00:28:13.899 VM: VM Ghost created.
+Jan 09 00:28:13.901 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/云微/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Jan 09 00:28:13.902 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 09 00:28:13.903 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\云微\Desktop\新建文件夹\untitled\project-files\dynamips\c3745-adventerprisek9-mz.124-25d.image-256.ghost' 
+Jan 09 00:28:13.904 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Jan 09 00:28:13.905 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 09 00:28:13.906 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jan 09 00:28:13.906 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 09 00:28:14.172 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 09 00:28:14.332 VM: VM Ghost shutdown.
+Jan 09 00:28:14.332 VM: VM Ghost destroyed.
+Jan 09 00:28:14.343 HYPERVISOR: exec_cmd: vm get_status R-8 
+Jan 09 01:23:15.187 HYPERVISOR: exec_cmd: vm get_status R-8 
+Jan 09 01:23:15.188 HYPERVISOR: exec_cmd: vm stop R-8 
+Jan 09 01:23:15.287 VM: VM R-8 shutdown.
+Jan 09 01:23:15.288 HYPERVISOR: exec_cmd: vm extract_config R-8 
+Jan 09 01:24:15.355 HYPERVISOR: exec_cmd: vm get_status R-8 
+Jan 09 01:24:15.356 HYPERVISOR: exec_cmd: vm extract_config R-8 
+Jan 09 01:24:15.747 HYPERVISOR: exec_cmd: vm get_status R-8 
+Jan 09 01:24:15.747 HYPERVISOR: exec_cmd: vm extract_config R-8 
+Jan 09 01:24:15.750 HYPERVISOR: exec_cmd: vm delete R-8 
+Jan 09 01:24:15.750 VM: VM R-8 destroyed.
+Jan 09 01:24:15.756 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 09 01:24:16.114 HYPERVISOR: Stopped.
+Jan 09 01:24:16.114 GENERAL: reset done.

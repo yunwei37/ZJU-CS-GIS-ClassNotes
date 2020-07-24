@@ -1,0 +1,9 @@
+# This the configuration for PC4
+#
+# Uncomment the following line to enable DHCP
+# dhcp
+# or the line below to manually setup an IP address and subnet mask
+ip fec0::6500:201:1/112
+#
+
+set pcname PC4

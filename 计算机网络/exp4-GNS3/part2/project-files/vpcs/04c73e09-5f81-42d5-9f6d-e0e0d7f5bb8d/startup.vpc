@@ -1,0 +1,9 @@
+# This the configuration for PC14
+#
+# Uncomment the following line to enable DHCP
+# dhcp
+# or the line below to manually setup an IP address and subnet mask
+ip 10.2.0.5 255.255.0.0
+#
+
+set pcname PC14

@@ -1,0 +1,9 @@
+# This the configuration for PC2
+#
+# Uncomment the following line to enable DHCP
+# dhcp
+# or the line below to manually setup an IP address and subnet mask
+ip fec0::6500:101:2/112
+#
+
+set pcname PC2

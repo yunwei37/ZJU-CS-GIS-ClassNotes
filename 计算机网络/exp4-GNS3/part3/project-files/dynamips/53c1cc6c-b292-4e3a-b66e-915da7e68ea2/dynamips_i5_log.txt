@@ -1,0 +1,41 @@
+Jan 03 21:33:54.470 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jan 03 21:33:54.470 HYPERVISOR: Started on IP = localhost, TCP port = 25142.
+Jan 03 21:33:54.963 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 03 21:33:54.963 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\云微\Desktop\新建文件夹\part3\project-files\dynamips 
+Jan 03 21:33:54.963 GENERAL: working_dir=C:\Users\云微\Desktop\新建文件夹\part3\project-files\dynamips
+Jan 03 21:33:54.963 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\云微\Desktop\新建文件夹\part3\project-files\dynamips\c343e152-44d1-4f96-a9e8-1f08b7d00bac 
+Jan 03 21:33:54.972 GENERAL: working_dir=C:\Users\云微\Desktop\新建文件夹\part3\project-files\dynamips\c343e152-44d1-4f96-a9e8-1f08b7d00bac
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Jan 03 21:33:54.972 VM: VM R2 created.
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5015 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm set_disk0 R2 4 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60aa1da0 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/云微/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: c3745 set_mac_addr R2 c402.51cc.0000 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 NM-4T 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm slot_add_binding R2 3 0 NM-16ESW 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 16 WIC-1T 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 32 WIC-1T 
+Jan 03 21:33:54.972 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 48 WIC-1T 
+Jan 03 21:33:58.486 HYPERVISOR: exec_cmd: nio create_udp udp-971f5caa-ac7d-4daa-aa9b-9811bcd116b0 10030 127.0.0.1 10031 
+Jan 03 21:33:58.799 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-971f5caa-ac7d-4daa-aa9b-9811bcd116b0 
+Jan 03 21:33:58.799 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 03 21:34:00.058 HYPERVISOR: exec_cmd: nio create_udp udp-41e9bb81-85dc-49a4-8f54-52c03998cb0f 10046 127.0.0.1 10047 
+Jan 03 21:34:00.058 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-41e9bb81-85dc-49a4-8f54-52c03998cb0f 
+Jan 03 21:34:00.058 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 03 21:34:00.755 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 03 21:34:00.755 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jan 03 21:34:00.755 HYPERVISOR: exec_cmd: vm delete R2 
+Jan 03 21:34:00.755 VM: VM R2 destroyed.
+Jan 03 21:34:00.763 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 03 21:34:01.057 HYPERVISOR: Stopped.
+Jan 03 21:34:01.057 GENERAL: reset done.
