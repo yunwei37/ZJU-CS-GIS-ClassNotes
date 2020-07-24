@@ -1,0 +1,27 @@
+:Base Simulate.hlp>default
+:Title LC-3 Simulator Help
+1 Overview
+2 What is the LC-3 Simulator=main_index
+2 The Display=memory
+1 Programs
+2 Object and Symbol Files=object_files
+2 Loading Programs=load_program
+2 Reloading Programs=reload_program
+2 Loading Simulator Extensions=load_extension
+2 Reinitializing the Machine=reinit
+2 Randomizing the Machine=randomize
+1 Breakpoints
+2 What are breakpoints?=breakpoints
+2 Adding and Removing Breakpoints=bp_dialog
+2 Toggling Breakpoints=bp_toggle
+1 Setting Values
+2 How do you set a value?=set_value
+2 How do you set the PC?=set_pc
+2 Saving Memory Contents=memory_file
+1 Executing Instructions
+2 Executing Instructions=execution
+1 Input and Output
+2 The Console Window=console
+2 Clearing the Console=clear_console
+2 Saving Console Output=console_file
+2 Interrupts=interrupts

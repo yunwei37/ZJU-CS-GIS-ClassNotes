@@ -1,0 +1,23 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	COUNT                   303E
+//	DDR                     3047
+//	DELAY                   3036
+//	DSR                     3046
+//	ENTREN                  3049
+//	IVT                     3048
+//	KBDR                    3045
+//	KBSR                    3044
+//	LOOP                    3007
+//	MASK                    3043
+//	PUTCHAR                 302E
+//	REP                     3039
+//	SHOW                    3030
+//	SPACE                   3042
+//	STACK                   3000
+//	c2s4                    301C
+//	char1                   3040
+//	char2                   3041
+//	line1                   3009
+//	line2                   3015
+//	newline                 303F

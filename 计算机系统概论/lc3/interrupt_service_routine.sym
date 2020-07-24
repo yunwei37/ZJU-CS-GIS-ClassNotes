@@ -1,0 +1,17 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	DDR                     2020
+//	DSR                     201F
+//	KBDR                    201E
+//	KBSR                    201D
+//	char1                   2022
+//	char2                   2023
+//	chkr0                   2007
+//	ckb                     200D
+//	diffc1                  2024
+//	diffc2                  2025
+//	dr0                     200C
+//	ifc1                    2006
+//	loop                    2012
+//	loop1                   2018
+//	newline                 2021

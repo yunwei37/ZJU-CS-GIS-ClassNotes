@@ -1,0 +1,7 @@
+:Base LC3Edit.hlp>default
+:Title LC-3 Editor Help
+1 Overview=main_index
+1 Type of Source Code=source_code
+1 Translating Program=translate
+1 Output Files=output_files
+1 Error and Warning Messages=errors

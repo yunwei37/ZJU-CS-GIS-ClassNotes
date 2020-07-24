@@ -1,0 +1,16 @@
+	.ORIG x3200
+	.FILL #3
+	.FILL #4
+	.FILL #12
+	.FILL #11
+	.FILL #10
+	.FILL #9
+	.FILL #8
+	.FILL #7
+	.FILL #6
+	.FILL #5
+	.FILL #4
+	.FILL #3
+	.FILL #2
+	.FILL #1
+	.END

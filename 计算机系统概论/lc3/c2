@@ -1,0 +1,4 @@
+	.ORIG x3000
+	
+pormpt	.STRINGZ "Type a name and press Enter:
+	.END

@@ -1,0 +1,41 @@
+; R0: the 16-bit value from x3100 
+; R1 the counter controling the loop
+; R2 count the consecutive '1's
+; R3 is used to break from the loop when find the three consecutive '1's
+; then generate the 'Y' or 'N'
+
+0011 0000 0000 0000     ;.ORIG x3000
+0101 001 001 1 00000    ; AND R1 R1 #0
+0001 001 001 1 01111    ; ADD R1 R1 #15 ( R1<-15 )
+0101 010 010 1 00000    ; AND R2 R2 #0 ( clear R2 )
+0010 000 011111100      ; LD R0 x3100 ( load the vlue to R0)
+                        ; the loop start
+0000 011 000000010	    ; BRzp x3007 ( if the first digit is 1, R2++ )
+0001 010 010 1 00001    ; ADD R2 R2 #1 
+0000 111 000000001      ; BRnzp x3008 
+0101 010 010 1 00000    ; AND R2 R2 #0 ( else, clear R2 )
+0001 011 010 1 11101    ; ADD R3 R2 #-3 ( check if R2 equal to 3 )
+0000 010 000001100      ; BRz x3016 ( if equal ,goto generate 'Y' )
+0001 001 001 1 11111    ; ADD R1 R1 #-1 ( R1-- )
+0000 100 000000010      ; BRn x300e (check if R1 < 0 )
+0001 000 000 0 00 000   ; ADD R0 R0 R0 ( shift left R0 )
+0000 111 111110110      ; BRnzp x3004 ( loop )
+                        ;
+0101 000 000 1 00000    ; AND R0 R0 #0  ( generate 'N' )
+0001 000 000 1 01001    ; ADD R0 R0 #9
+0001 000 000 0 00 000   ; ADD R0 R0 R0
+0001 000 000 0 00 000   ; ADD R0 R0 R0
+0001 000 000 0 00 000   ; ADD R0 R0 R0
+0001 000 000 1 00110    ; ADD R0 R0 #9
+1111 0000 0010 0001     ; TRAP x21
+1111 0000 0010 0101     ; TRAP x25 halt
+                        ;
+0101 000 000 1 00000    ; AND R0 R0 #0 ( generate 'Y' )
+0001 000 000 1 01011    ; ADD R0 R0 #11
+0001 000 000 0 00 000   ; ADD R0 R0 R0
+0001 000 000 0 00 000   ; ADD R0 R0 R0
+0001 000 000 0 00 000   ; ADD R0 R0 R0
+0001 000 000 1 00001    ; ADD R0 R0 #9
+1111 0000 0010 0001     ; TRAP x21
+1111 0000 0010 0101     ; TRAP x25 halt
+
