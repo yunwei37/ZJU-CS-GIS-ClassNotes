@@ -1,0 +1,3 @@
+verilog work "CtrlUnit.v"
+verilog work "testCtrl.v"
+verilog work "D:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v"

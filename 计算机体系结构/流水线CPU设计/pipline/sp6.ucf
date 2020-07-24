@@ -1,0 +1,51 @@
+##########################################################
+#时钟和复位接口
+NET "ext_clk_25m" LOC = P23;
+NET "ext_clk_25m" IOSTANDARD = LVCMOS33;
+NET "ext_rst_n" LOC = P24;
+NET "ext_rst_n" IOSTANDARD = LVCMOS33;
+
+##########################################################
+#4位数码管接口
+NET "dtube_cs_n[0]"		LOC=P132   | IOSTANDARD = LVCMOS33;
+NET "dtube_cs_n[1]"		LOC=P141   | IOSTANDARD = LVCMOS33;
+NET "dtube_cs_n[2]"		LOC=P142   | IOSTANDARD = LVCMOS33;
+NET "dtube_cs_n[3]"		LOC=P2   | IOSTANDARD = LVCMOS33;
+
+NET "dtube_data[0]"		LOC=P1   | IOSTANDARD = LVCMOS33;
+NET "dtube_data[1]"		LOC=P140   | IOSTANDARD = LVCMOS33;
+NET "dtube_data[2]"		LOC=P134   | IOSTANDARD = LVCMOS33;
+NET "dtube_data[3]"		LOC=P138   | IOSTANDARD = LVCMOS33;
+NET "dtube_data[4]"		LOC=P137   | IOSTANDARD = LVCMOS33;
+NET "dtube_data[5]"		LOC=P143   | IOSTANDARD = LVCMOS33;
+NET "dtube_data[6]"		LOC=P133   | IOSTANDARD = LVCMOS33;
+NET "dtube_data[7]"		LOC=P139   | IOSTANDARD = LVCMOS33;
+
+##########################################################
+#拨码开关接口
+NET "switch[0]" LOC = P29;
+NET "switch[0]" IOSTANDARD = LVCMOS33;
+NET "switch[1]" LOC = P30;
+NET "switch[1]" IOSTANDARD = LVCMOS33;
+NET "switch[2]" LOC = P32;
+NET "switch[2]" IOSTANDARD = LVCMOS33;
+NET "switch[3]" LOC = P33;
+NET "switch[3]" IOSTANDARD = LVCMOS33;
+##########################################################
+#LED指示灯接口
+NET "led[0]" LOC = P17;
+NET "led[0]" IOSTANDARD = LVCMOS33;
+NET "led[1]" LOC = P16;
+NET "led[1]" IOSTANDARD = LVCMOS33;
+NET "led[2]" LOC = P15;
+NET "led[2]" IOSTANDARD = LVCMOS33;
+NET "led[3]" LOC = P14;
+NET "led[3]" IOSTANDARD = LVCMOS33;
+NET "led[4]" LOC = P12;
+NET "led[4]" IOSTANDARD = LVCMOS33;
+NET "led[5]" LOC = P11;
+NET "led[5]" IOSTANDARD = LVCMOS33;
+NET "led[6]" LOC = P10;
+NET "led[6]" IOSTANDARD = LVCMOS33;
+NET "led[7]" LOC = P9;
+NET "led[7]" IOSTANDARD = LVCMOS33;

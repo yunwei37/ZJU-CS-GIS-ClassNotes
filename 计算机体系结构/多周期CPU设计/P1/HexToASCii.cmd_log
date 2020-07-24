@@ -1,0 +1,3 @@
+vhdtdtfi -lib work D:/Xilinx/arch/P1/HexToASCii.v -lang verilog -prj P1 -o HexToASCii.spl -module HexToASCii -template D:/Xilinx/14.6/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e HexToASCii.spl D:/Xilinx/arch/P1/HexToASCii.sym 
+vhdtdtfi -lang verilog -prj P1 -o D:/Xilinx/arch/P1/HexToASCii.tfi -lib work D:/Xilinx/arch/P1//HexToASCii.v -module HexToASCii -template D:/Xilinx/14.6/ISE_DS/ISE//data/tfi.tft -deleteonerror 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="HexToASCii">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2020-4-5T5:42:46</timestamp>
+    <attr value="HexToASCii" name="VeriModel" />
+    <pin polarity="Input" x="0" y="-32" name="hex(3:0)" />
+    <pin polarity="Output" x="384" y="-32" name="ascii(7:0)" />
+    <graph>
+        <rect width="256" x="64" y="-64" height="64" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-72" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin hex(3:0)" />
+        <rect width="64" x="0" y="-44" height="24" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-32" type="pin ascii(7:0)" />
+        <rect width="64" x="320" y="-44" height="24" />
+        <line x2="384" y1="-32" y2="-32" x1="320" />
+    </graph>
+</symbol>

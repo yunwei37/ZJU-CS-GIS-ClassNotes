@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="NetListWriters" num="633" delta="old" >The generated Verilog netlist contains Xilinx <arg fmt="%s" index="1">SIMPRIM</arg> simulation primitives and has to be used with <arg fmt="%s" index="2">SIMPRIM</arg> simulation library for correct compilation and simulation. 
+</msg>
+
+<msg type="info" file="NetListWriters" num="0" delta="new" >Xilinx recommends running separate simulations to check for setup by specifying the MAX field in the SDF file and for hold by specifying the MIN field in the SDF file. Please refer to Simulator documentation for more details on specifying MIN and MAX field in the SDF.
+</msg>
+
+<msg type="info" file="NetListWriters" num="665" delta="old" >For more information on how to pass the SDF switches to the simulator, see your Simulator tool documentation.
+</msg>
+
+</messages>
+

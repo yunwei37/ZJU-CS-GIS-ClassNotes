@@ -32,6 +32,7 @@
 - 计算机图形学
 - 人工智能
 - 计算机组成
+- 计算机体系结构
     
 ### 作业以及项目链接
 
@@ -40,7 +41,7 @@
     - [基于Socket接口实现自定义协议聊天室](计算机网络/socketChat)
     - [一个轻量级的WEB服务器](计算机网络/webServer)
     - [地理空间索引：四叉树/希尔伯特曲线/Z曲线](地理空间数据库/Geometry)
-    - [剪枝搜索实现黑白棋AI](人工智能/AI Reversi)
+    - [剪枝搜索实现黑白棋AI](人工智能/AI_Reversi)
     - [基于卷积神经网络的垃圾分类](人工智能/garbage-classification)
     - [自适应中值滤波算法去除椒盐噪声](人工智能/image-restoration)
 
@@ -48,4 +49,5 @@
   - GIS程序设计：湖北疫情数据专题显示系统 [https://github.com/yunwei37/COVID-19-ArcEngine](https://github.com/yunwei37/COVID-19-ArcEngine)
   - 计算机组成：Qt实现的图形化界面MIPS汇编指令的汇编器/反汇编器/模拟器 [https://github.com/yunwei37/MIPS-sc-zju](https://github.com/yunwei37/MIPS-sc-zju)
   - 面向对象程序设计：基于QT开发的UNO卡牌游戏 [https://github.com/yunwei37/UNO-game-oop](https://github.com/yunwei37/UNO-game-oop)
-  - 计算机体系结构：
+  - 计算机体系结构：多周期CPU设计 [计算机体系结构\多周期CPU设计](计算机体系结构/多周期CPU设计)
+  - 计算机体系结构: 流水线CPU设计 [计算机体系结构\流水线CPU设计](计算机体系结构/流水线CPU设计)

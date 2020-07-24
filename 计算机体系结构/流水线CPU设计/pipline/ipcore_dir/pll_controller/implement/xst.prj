@@ -1,0 +1,2 @@
+verilog work ../../pll_controller.v
+verilog work ../example_design/pll_controller_exdes.v

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="pll_controller">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2015-5-11T7:42:38</timestamp>
+    <pin polarity="Input" x="0" y="80" name="clk_in1" />
+    <pin polarity="Input" x="0" y="432" name="reset" />
+    <pin polarity="Output" x="608" y="80" name="clk_out1" />
+    <pin polarity="Output" x="608" y="176" name="clk_out2" />
+    <pin polarity="Output" x="608" y="272" name="clk_out3" />
+    <pin polarity="Output" x="608" y="368" name="clk_out4" />
+    <pin polarity="Output" x="608" y="976" name="locked" />
+    <graph>
+        <text style="fontsize:40;fontname:Arial" x="32" y="32">pll_controller</text>
+        <rect width="544" x="32" y="32" height="1056" />
+        <line x2="32" y1="80" y2="80" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="80" type="pin clk_in1" />
+        <line x2="32" y1="432" y2="432" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="432" type="pin reset" />
+        <line x2="576" y1="80" y2="80" x1="608" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="572" y="80" type="pin clk_out1" />
+        <line x2="576" y1="176" y2="176" x1="608" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="572" y="176" type="pin clk_out2" />
+        <line x2="576" y1="272" y2="272" x1="608" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="572" y="272" type="pin clk_out3" />
+        <line x2="576" y1="368" y2="368" x1="608" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="572" y="368" type="pin clk_out4" />
+        <line x2="576" y1="976" y2="976" x1="608" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="572" y="976" type="pin locked" />
+    </graph>
+</symbol>

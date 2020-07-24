@@ -1,0 +1,2 @@
+COMPILED_SDF_FILE = "../../implement/results/routed.sdf.X",
+SCOPE = pll_controller_tb.dut;

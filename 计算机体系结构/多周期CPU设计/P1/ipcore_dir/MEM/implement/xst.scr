@@ -1,0 +1,13 @@
+run
+-ifmt VHDL
+-ent MEM_exdes
+-p xc3s500e-fg320-4
+-ifn xst.prj
+-write_timing_constraints No
+-iobuf YES
+-max_fanout 100
+-ofn MEM_exdes 
+-ofmt NGC
+-bus_delimiter ()
+-hierarchy_separator /
+-case Maintain
