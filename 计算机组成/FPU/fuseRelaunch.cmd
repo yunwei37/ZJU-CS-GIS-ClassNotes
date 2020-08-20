@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Xilinx/org/floatpoint/testfloat_isim_beh.exe" -prj "D:/Xilinx/org/floatpoint/testfloat_beh.prj" "work.testfloat" "work.glbl" 

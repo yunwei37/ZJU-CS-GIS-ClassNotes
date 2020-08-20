@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="diver">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2020-4-10T16:5:53</timestamp>
+    <pin polarity="Input" x="0" y="80" name="clk" />
+    <pin polarity="Input" x="0" y="208" name="dividend[47:0]" />
+    <pin polarity="Input" x="0" y="240" name="divisor[47:0]" />
+    <pin polarity="Input" x="0" y="304" name="nd" />
+    <pin polarity="Output" x="576" y="80" name="rfd" />
+    <pin polarity="Output" x="576" y="208" name="quotient[47:0]" />
+    <pin polarity="Output" x="576" y="240" name="fractional[23:0]" />
+    <pin polarity="Output" x="576" y="304" name="rdy" />
+    <graph>
+        <text style="fontsize:40;fontname:Arial" x="32" y="32">diver</text>
+        <rect width="512" x="32" y="32" height="352" />
+        <line x2="32" y1="80" y2="80" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="80" type="pin clk" />
+        <line x2="32" y1="208" y2="208" style="linewidth:W" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="208" type="pin dividend[47:0]" />
+        <line x2="32" y1="240" y2="240" style="linewidth:W" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="240" type="pin divisor[47:0]" />
+        <line x2="32" y1="304" y2="304" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="304" type="pin nd" />
+        <line x2="544" y1="80" y2="80" x1="576" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="540" y="80" type="pin rfd" />
+        <line x2="544" y1="208" y2="208" style="linewidth:W" x1="576" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="540" y="208" type="pin quotient[47:0]" />
+        <line x2="544" y1="240" y2="240" style="linewidth:W" x1="576" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="540" y="240" type="pin fractional[23:0]" />
+        <line x2="544" y1="304" y2="304" x1="576" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="540" y="304" type="pin rdy" />
+    </graph>
+</symbol>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Xilinx/org/floatpoint/testfloat_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testfloat" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/testfloat/result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/fin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fin</obj_property>
+      <obj_property name="ObjectShortName">fin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/A" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/B" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">c[1:0]</obj_property>
+      <obj_property name="ObjectShortName">c[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/A" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/B" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">c[1:0]</obj_property>
+      <obj_property name="ObjectShortName">c[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/sr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">sr[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/adder1r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">adder1r[8:0]</obj_property>
+      <obj_property name="ObjectShortName">adder1r[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/adder2r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">adder2r[8:0]</obj_property>
+      <obj_property name="ObjectShortName">adder2r[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/adder3r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">adder3r[8:0]</obj_property>
+      <obj_property name="ObjectShortName">adder3r[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/lr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/fin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fin</obj_property>
+      <obj_property name="ObjectShortName">fin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/ae" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ae[8:0]</obj_property>
+      <obj_property name="ObjectShortName">ae[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/be" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">be[8:0]</obj_property>
+      <obj_property name="ObjectShortName">be[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/am" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">am[31:0]</obj_property>
+      <obj_property name="ObjectShortName">am[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/bm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bm[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/af" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">af</obj_property>
+      <obj_property name="ObjectShortName">af</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/bf" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bf</obj_property>
+      <obj_property name="ObjectShortName">bf</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/ctrl" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ctrl[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ctrl[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/sALUc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sALUc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sALUc[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfloat/uut/lALUc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lALUc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">lALUc[1:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,57 @@
+INFO:sim:172 - Generating IP...
+Customizing IP...
+Qt: Untested Windows version 6.2 detected!
+Release 14.6 - Xilinx CORE Generator IP GUI Launcher P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Finished Customizing.
+Generating IP...
+WARNING:sim:472 - The chosen IP does not support a Verilog behavioral model,
+   generating a Verilog structural model instead.
+XST: HDL Elaboration
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Design Summary
+Generating Implementation files.
+WARNING:coreutil - WARNING: Default charset GBK not supported, using ISO-8859-1
+   instead
+Generating NGC file.
+Generating Verilog structural model.
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'diver'...
+Generating metadata file...
+Generating ISE project...
+XCO file found: diver.xco
+XMDF file found: diver_xmdf.tcl
+Adding D:/Xilinx/org/floatpoint/ipcore_dir/tmp/_cg/diver.asy -view all
+-origin_type imported
+Adding D:/Xilinx/org/floatpoint/ipcore_dir/tmp/_cg/diver.ngc -view all
+-origin_type created
+Checking file "D:/Xilinx/org/floatpoint/ipcore_dir/tmp/_cg/diver.ngc" for
+project device match ...
+File "D:/Xilinx/org/floatpoint/ipcore_dir/tmp/_cg/diver.ngc" device information
+matches project device.
+Adding D:/Xilinx/org/floatpoint/ipcore_dir/tmp/_cg/diver.sym -view all
+-origin_type imported
+Adding D:/Xilinx/org/floatpoint/ipcore_dir/tmp/_cg/diver.v -view all
+-origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "D:/Xilinx/org/floatpoint/ipcore_dir/tmp/_cg/diver.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding D:/Xilinx/org/floatpoint/ipcore_dir/tmp/_cg/diver.veo -view all
+-origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/diver"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'diver'.
