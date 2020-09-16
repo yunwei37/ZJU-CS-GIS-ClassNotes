@@ -52,3 +52,4 @@
   - 面向对象程序设计：基于QT开发的UNO卡牌游戏 [https://github.com/yunwei37/UNO-game-oop](https://github.com/yunwei37/UNO-game-oop)
   - 计算机体系结构：多周期CPU设计 [计算机体系结构\多周期CPU设计](计算机体系结构/多周期CPU设计)
   - 计算机体系结构: 流水线CPU设计 [计算机体系结构\流水线CPU设计](计算机体系结构/流水线CPU设计)
+  - 课程综合实践Ⅱ：C++ 工程实践：OpenGL 实现的类似MC的一个简单沙盒游戏 [https://github.com/yunwei37/mc](https://github.com/yunwei37/mc)
