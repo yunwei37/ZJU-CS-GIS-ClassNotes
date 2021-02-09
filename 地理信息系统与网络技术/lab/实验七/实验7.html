@@ -1,0 +1,374 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <!--
+       ArcGIS API for JavaScript, https://js.arcgis.com
+       For more information about the intro-mapview sample,
+       read the original sample description at developers.arcgis.com.
+       https://developers.arcgis.com/javascript/latest/sample-code/intro-mapview/index.html
+       -->
+    <title>Simple Map by LSC</title>
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+      }
+      #overviewDiv {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        height: 200px;
+        width: 300px;
+        z-index: 1;
+        border: 1px solid black;
+        overflow: hidden;
+      }
+      #extentDiv {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        z-index: 2;
+      }
+      #topbar {
+        background: #fff;
+        padding: 10px;
+      }
+
+      .action-button {
+        font-size: 16px;
+        background-color: transparent;
+        border: 1px solid #d3d3d3;
+        color: #6e6e6e;
+        height: 32px;
+        width: 32px;
+        text-align: center;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+      }
+
+      .action-button:hover,
+      .action-button:focus {
+        background: #0079c1;
+        color: #e4e4e4;
+      }
+
+      .active {
+        background: #0079c1;
+        color: #e4e4e4;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.18/esri/themes/light/main.css"
+    />
+    <script src="https://js.arcgis.com/4.18/"></script>
+
+    <script>
+      require([
+        "esri/Map",
+        "esri/views/MapView",
+        "esri/widgets/BasemapToggle",
+        "esri/widgets/ScaleBar",
+        "esri/layers/FeatureLayer",
+        "esri/widgets/Legend",
+        "esri/widgets/DistanceMeasurement2D",
+        "esri/widgets/AreaMeasurement2D",
+      ], function (
+        Map,
+        MapView,
+        ScaleBar,
+        BasemapToggle,
+        FeatureLayer,
+        Legend,
+        DistanceMeasurement2D,
+        AreaMeasurement2
+      ) {
+        var activeWidget = null;
+        var mainMap = new Map({
+          basemap: "gray",
+        });
+
+        var overviewMap = new Map({
+          basemap: "gray",
+        });
+
+        var mainView = new MapView({
+          container: "viewDiv",
+          map: mainMap,
+        });
+
+        mainView.when(function () {
+          mainView.goTo(
+            {
+              center: [-122.3487846, 47.58907],
+              zoom: 12,
+              heading: 0,
+              tile: 0,
+            },
+            {
+              animate: false,
+            }
+          );
+        });
+
+        var mapView = new MapView({
+          container: "overviewDiv",
+          map: overviewMap,
+          constrains: {
+            rotationEnabled: false,
+          },
+        });
+
+        var extentDiv = document.getElementById("extentDiv");
+
+        var toggle = new BasemapToggle({
+          view: mainView,
+          nextBasemap: "topo",
+        });
+
+        mainView.ui.add(toggle, "bottom-right");
+
+        var scalebar = new ScaleBar({
+          view: mainView,
+        });
+        mainView.ui.add(scalebar, "bottom-right");
+
+        const legend = new Legend({
+          view: mainView,
+        });
+        mainView.ui.add(legend, "bottom-left");
+
+        const less35 = {
+          type: "simple-fill",
+          color: "#fffcd4",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [255, 255, 255, 0.5],
+          },
+        };
+
+        const less50 = {
+          type: "simple-fill",
+          color: "#b1cdc2",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [255, 255, 255, 0.5],
+          },
+        };
+
+        const more50 = {
+          type: "simple-fill",
+          color: "#38627a",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [255, 255, 255, 0.5],
+          },
+        };
+
+        const more75 = {
+          type: "simple-fill",
+          color: "#0d2644",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [255, 255, 255, 0.5],
+          },
+        };
+
+        const renderer = {
+          type: "class-breaks",
+          field: "COL_DEG",
+          normalizationField: "EDUCBASECY",
+          legendOptions: {
+            title: "% of adults (25+) with a college degree",
+          },
+          defaultSymbol: {
+            type: "simple-fill",
+            color: "black",
+            style: "backward-diagonal",
+            outline: {
+              width: 0.5,
+              color: [50, 50, 50, 0.6],
+            },
+          },
+          defaultLabel: "no data",
+          classBreakInfos: [
+            {
+              minValue: 0,
+              maxValue: 0.3499,
+              symbol: less35,
+              label: "< 35%",
+            },
+            {
+              minValue: 0.35,
+              maxValue: 0.4999,
+              symbol: less50,
+              label: "35 - 50%",
+            },
+            {
+              minValue: 0.5,
+              maxValue: 0.7499,
+              symbol: more50,
+              label: "50 - 75%",
+            },
+            {
+              minValue: 0.75,
+              maxValue: 1.0,
+              symbol: more75,
+              label: " > 75%",
+            },
+          ],
+        };
+
+        var seattleLayer = new FeatureLayer({
+          url:
+            "https://services.arcgis.com/V6ZHFr6zdgNZuVG0/arcgis/rest/services/Puget_Sound_BG_demographics/FeatureServer/0",
+          title: "Seattle Block groups",
+          renderer: renderer,
+          popupTemplate: {
+            title: "Block Group {FID_Block_Group}",
+            content:
+              "{COL_DEG} adults 25 years old and older in this block group have a college degree. " +
+              "{NO_COL_DEG} adults do not have a college degree",
+          },
+          definitionExpression: "CITY = 'Seattle' AND EDUCBASECY > 0",
+          opacity: 0.9,
+        });
+
+        mainMap.add(seattleLayer);
+
+        mainView.ui.add("topbar", "top-left");
+
+        document
+          .getElementById("distanceButton")
+          .addEventListener("click", function () {
+            setActiveWidget(null);
+            if (!this.classList.contains("active")) {
+              setActiveWidget("distance");
+            } else {
+              setActiveButton(null);
+            }
+          });
+
+        document
+          .getElementById("areaButton")
+          .addEventListener("click", function () {
+            setActiveWidget(null);
+            if (!this.classList.contains("active")) {
+              setActiveWidget("area");
+            } else {
+              setActiveButton(null);
+            }
+          });
+
+        function setActiveWidget(type) {
+          switch (type) {
+            case "distance":
+              activeWidget = new DistanceMeasurement2D({
+                view: mainView,
+              });
+
+              // skip the initial 'new measurement' button
+              activeWidget.viewModel.newMeasurement();
+
+              mainView.ui.add(activeWidget, "top-right");
+              setActiveButton(document.getElementById("distanceButton"));
+              break;
+            case "area":
+              activeWidget = new AreaMeasurement2D({
+                view: mainView,
+              });
+
+              // skip the initial 'new measurement' button
+              activeWidget.viewModel.newMeasurement();
+
+              mainView.ui.add(activeWidget, "top-right");
+              setActiveButton(document.getElementById("areaButton"));
+              break;
+            case null:
+              if (activeWidget) {
+                mainView.ui.remove(activeWidget);
+                activeWidget.destroy();
+                activeWidget = null;
+              }
+              break;
+          }
+        }
+
+        function setActiveButton(selectedButton) {
+          // focus the view to activate keyboard shortcuts for sketching
+          mainView.focus();
+          var elements = document.getElementsByClassName("active");
+          for (var i = 0; i < elements.length; i++) {
+            elements[i].classList.remove("active");
+          }
+          if (selectedButton) {
+            selectedButton.classList.add("active");
+          }
+        }
+
+        mapView.when(function () {
+          mainView.watch("extent", updateOverviewExtent);
+          mapView.watch("extent", updateOverviewExtent);
+
+          function updateOverview() {
+            mapView.goTo({
+              center: mainView.center,
+              scale:
+                mainView.scale *
+                2 *
+                Math.max(
+                  mainView.width / mapView.width,
+                  mainView.height / mapView.height
+                ),
+            });
+          }
+
+          function updateOverviewExtent() {
+            var extent = mainView.extent;
+
+            var bottomLeft = mapView.toScreen(extent.xmin, extent.ymin);
+            var topRight = mapView.toScreen(extent.xmax, extent.ymax);
+
+            extentDiv.style.top = topRight.y + "px";
+            extentDiv.style.left = bottomLeft.x + "px";
+
+            extentDiv.style.height = bottomLeft.y - topRight.y + "px";
+            extentDiv.style.width = topRight.x - bottomLeft.x + "px";
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="overviewDiv"></div>
+    <div id="viewDiv"></div>
+    <div id="extentDiv"></div>
+    <div id="topbar">
+      <button
+        class="action-button esri-icon-measure-line"
+        id="distanceButton"
+        type="button"
+        title="Measure distance between two or more points"
+      ></button>
+      <button
+        class="action-button esri-icon-measure-area"
+        id="areaButton"
+        type="button"
+        title="Measure area"
+      ></button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2) 生成1~7之内的随机数（包括），并能够通过这个随机数的不同，alert不同的颜色名，如：若生成的随机数是2，则alert(“蓝色”)；</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var vNum
+        vNum = Math.random()
+        vNum = Math.round(vNum*6 + 1)
+        switch (vNum)
+        {
+        case 1:
+            alert("白色")
+        break
+        case 2:
+            alert("蓝色")
+        break
+        case 3:
+            alert("黑色")
+        break
+        case 4:
+            alert("棕色")
+        break
+        case 5:
+            alert("绿色")
+        break
+        case 6:
+            alert("灰色")
+        break
+        case 7:
+            alert("紫色")
+        break
+        }
+    </script>
+    <p>2) 生成1~7之内的随机数（包括），并能够通过这个随机数的不同，alert不同的颜色名，如：若生成的随机数是2，则alert(“蓝色”)；</p>
+</body>
+</html>

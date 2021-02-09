@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Examples</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link href="" rel="stylesheet">
+	<script type="text/javascript">
+		function add() {
+			var node = document.querySelector('#isay-submit').parentNode.previousElementSibling;
+			var strHtml = '<p style="background-color: red;">name</p>';
+			node.innerHTML += strHtml;
+		}
+		window.onload=add;
+    </script>
+</head>
+<body>
+	<div id="db-isay" class="mod isay isay-disable has-commodity ">
+		<form name="mbform" method="post" action="http://www.douban.com/">
+			<div style="display:none;">
+				<input type="hidden" name="ck" value="QwXm"/>
+			</div>
+			<ul class="isay-links">
+				<li class="isay-main active">
+					<a data-action="main" href="javascript:void(0);">说句话</a>
+				</li>
+				<li class="isay-pic">
+					<a data-action="pic" href="javascript:void(0);">发照片</a>
+				</li>
+				<li class="isay-share">
+					<a data-action="share" href="javascript:void(0);">推荐网页</a>
+				</li>
+				<li class="notes-link">
+					<a href="http://www.douban.com/note/create" title="添加日记">写日记</a>
+				</li>
+				<li class="commodity-link">
+					<a data-action="commodity" href="javascript:void(0)" title="发布东西">发布东西</a>
+					<div class="publish-ways">
+						<div class="share">
+							<a target="_blank" href="http://dongxi.douban.com/show/create">发布东西</a>
+						</div>
+						<div class="review">
+							<a target="_blank" href="http://dongxi.douban.com/article/create">写图文评论</a>
+						</div>
+						<s class="arr"></s>
+						<s class="arr-inner"></s>
+					</div>
+				</li>
+			</ul>
+			<div class="item">
+				<p class="highlighter mention-highlighter"></p>
+				<p class="highlighter error-highlighter"></p>
+				<label id="isay-label" for="isay-cont">分享生活点滴...</label>
+				<textarea data-minheight="70" tabindex="1" id="isay-cont" name="comment" rows="1"></textarea>
+			</div>
+			<div id="isay-act-field" class="isay-act"></div>
+			<div class="btn">
+				<span id="isay-counter"></span>
+				<span class="bn-submit bn-flat">
+					<input id="isay-submit" tabindex="1" type="submit" value="发布"></span>
+				<a target="_blank" href="http://www.douban.com/service/bookmarklet" class="lnk-share-tools" onclick="moreurl(this, {from:'index_rec'})" >添加网页推荐工具</a>
+			</div>
+		</form>
+		<div class="btn-group">
+			<form charset="utf-8" id="isay-upload" data-action="pic" action="/j/upload" enctype="multipart/form-data" method="post">
+				<div style="display:none;">
+					<input type="hidden" name="ck" value="QwXm"/>
+				</div>
+				<input id="isay-upload-inp" tabindex="2" autocomplete="off" data-action="pic" name="image" title="可传多张照片" type="file" multiple></form>
+			<a href="javascript:void(0);" tabindex="-1" data-action="pic" class="ico ico-pic" title="上传照片">照片</a>
+			<a href="javascript:void(0);" tabindex="2" data-action="topic" class="ico ico-topic" title="添加话题">话题</a>
+		</div>
+	</div>
+</body>
+</html>
