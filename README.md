@@ -60,3 +60,7 @@
   - 计算机体系结构: 流水线CPU设计 [计算机体系结构\流水线CPU设计](计算机体系结构/流水线CPU设计)
   - 课程综合实践Ⅱ：C++ 工程实践：OpenGL 实现的类似MC的一个简单沙盒游戏 [https://github.com/yunwei37/mc](https://github.com/yunwei37/mc)
   - 地理空间数据库：新冠肺炎疫情数据可视化交互分析网站平台 [https://github.com/yunwei37/COVID-19-NLP-vis](https://github.com/yunwei37/COVID-19-NLP-vis)
+  - 操作系统：一个 rust 编写的简单试验内核（原lab是用c写的，我改成rust了）[https://github.com/yunwei37/Linux-0.11-rs](https://github.com/yunwei37/Linux-0.11-rs)
+
+- 一些公开课：
+  - [mit 6.828 labs：更新到lab5文件系统结束](https://github.com/yunwei37/6.828-2018-labs)
