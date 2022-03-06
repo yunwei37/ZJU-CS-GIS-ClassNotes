@@ -1,6 +1,8 @@
 # 地理空间数据库
 
-2020 春夏 寿黎但
+2020 春夏 陶煜波
+
+课程主页：[http://www.cad.zju.edu.cn/home/ybtao/sdb/](http://www.cad.zju.edu.cn/home/ybtao/sdb/)
 
 - notes
   - 复习笔记1-4
