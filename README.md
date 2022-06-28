@@ -28,15 +28,14 @@
 
 <!-- TOC -->
 
-- [一个ZJU本科生的计算机/地理信息科学知识库](#一个zju本科生的计算机地理信息科学知识库)
-  - [路漫漫其修远兮...](#路漫漫其修远兮)
-  - [目录](#目录)
-  - [文件夹组织结构：](#文件夹组织结构)
-  - [作业以及项目链接](#作业以及项目链接)
-    - [Demo](#demo)
-    - [Project](#project)
-  - [公开课/活动](#公开课活动)
-  - [博客/论文/其他一些杂项](#博客论文其他一些杂项)
+- [路漫漫其修远兮...](#路漫漫其修远兮)
+- [目录](#目录)
+- [文件夹组织结构：](#文件夹组织结构)
+- [作业以及项目链接](#作业以及项目链接)
+  - [Demo](#demo)
+  - [Project](#project)
+- [公开课/活动](#公开课活动)
+- [博客/论文/其他一些杂项](#博客论文其他一些杂项)
 
 <!-- /TOC -->
 
@@ -60,7 +59,6 @@
 - 人工智能
 - 计算机体系结构（包含计算机组成）
 - 操作系统
-- GIS程序设计专题
 - 杂项（工具，笔记）
     
 ## 作业以及项目链接
@@ -100,7 +98,6 @@
 GIS:
 
 - GIS程序设计：湖北疫情数据专题显示系统 [https://github.com/yunwei37/COVID-19-ArcEngine](https://github.com/yunwei37/COVID-19-ArcEngine)
-
 - 地理空间数据库：新冠肺炎疫情数据可视化交互分析网站平台 [https://github.com/yunwei37/COVID-19-NLP-vis](https://github.com/yunwei37/COVID-19-NLP-vis)
   
 C++：
@@ -111,13 +108,8 @@ C++：
 计算机系统：
 
 - 计算机组成：Qt实现的图形化界面MIPS汇编指令的汇编器/反汇编器/模拟器 [https://github.com/yunwei37/MIPS-sc-zju](https://github.com/yunwei37/MIPS-sc-zju)
-
 - 计算机体系结构：多周期CPU设计 [计算机体系结构\多周期CPU设计](计算机体系结构/多周期CPU设计)
-  
-
 - 计算机体系结构: 流水线CPU设计 [计算机体系结构\流水线CPU设计](计算机体系结构/流水线CPU设计)
-
-
 - 操作系统：一个 rust 编写的简单试验内核（原lab是用c写的，我改成rust了）[https://github.com/yunwei37/Linux-0.11-rs](https://github.com/yunwei37/Linux-0.11-rs)
 
 其他：
