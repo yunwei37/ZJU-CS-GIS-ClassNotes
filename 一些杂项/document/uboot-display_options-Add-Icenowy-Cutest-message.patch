@@ -1,0 +1,29 @@
+From ff69e54d0942cbf376b2065605f2dac3dd36a713 Mon Sep 17 00:00:00 2001
+From: yunwei37 <1067852565@qq.com>
+Date: Fri, 13 May 2022 22:29:05 -0700
+Subject: [PATCH] display_options: Add Icenowy Cutest message
+
+At present there is not message about Icenowy.
+Everyone using U-Boot should know this: Icenowy is the cutest!
+It should be displayed with the version string.
+
+Signed-off-by: yunwei37 <1067852565@qq.com>
+---
+ lib/display_options.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/lib/display_options.c b/lib/display_options.c
+index 360b01bcf5..54aafa0d55 100644
+--- a/lib/display_options.c
++++ b/lib/display_options.c
+@@ -46,6 +46,7 @@ int display_options(void)
+ 
+ 	display_options_get_banner(true, buf, sizeof(buf));
+ 	printf("%s", buf);
++	printf("Icenowy is the cutest!\n");
+ 
+ 	return 0;
+ }
+-- 
+2.25.1
+
