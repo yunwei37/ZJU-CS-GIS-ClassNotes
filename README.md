@@ -41,7 +41,7 @@
 
 ## 文件夹组织结构：
 
-本仓库的目录结构大致以课程分类，可能部分不完全相同：
+本仓库的目录结构大致以课程分类，可能部分不完全相同（也许可以试着使用一下 github 的搜索功能？）：
 
 - 编译原理
 - 计算机网络（包含地理信息系统与网络技术）
@@ -54,11 +54,12 @@
   - leetcode题解
   - pta/pat题解
   - 自己的部分数据结构实现
-- 地理空间数据库
+- 数据库
 - 计算机图形学
 - 人工智能
 - 计算机体系结构（包含计算机组成）
 - 操作系统
+- 其他专业课程
 - 杂项（工具，笔记）
     
 ## 作业以及项目链接
@@ -104,6 +105,7 @@ C++：
 
 - 面向对象程序设计：基于QT开发的UNO局域网联机卡牌游戏 [https://github.com/yunwei37/UNO-game-oop](https://github.com/yunwei37/UNO-game-oop)
 - 课程综合实践Ⅱ：C++ 工程实践：OpenGL 实现的类似MC的一个简单沙盒游戏 [https://github.com/yunwei37/mc](https://github.com/yunwei37/mc)
+- [一个使用 C++20 协程和 io_uring 编写的服务器](https://github.com/yunwei37/co-uring-WebServer)
 
 计算机系统：
 
