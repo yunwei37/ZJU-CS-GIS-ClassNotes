@@ -1,3 +1,4 @@
+#! https://zhuanlan.zhihu.com/p/613033567
 # 论文阅读：Femto-Containers 轻量级虚拟化和故障隔离，为低功耗物联网微控制器上的小型软件功能提供支持
 
 > 本文来自 eunomia-bpf 社区，我们正在探索 eBPF 和 WebAssembly 相互结合的工具链和运行时: <https://github.com/eunomia-bpf/wasm-bpf> 社区关注于简化 eBPF 程序的编写、分发和动态加载流程，以及探索 eBPF 和 Wasm 相结合的工具链、运行时和运用场景等技术。
@@ -30,7 +31,7 @@
 
 当客户在现场部署设备上的功能时，嵌入式环境必须确保这些功能被沙箱化。在我们的威胁模型中，我们考虑了可能部署恶意代码的恶意租户和可能恶意交互已部署代码的恶意客户端[34]。
 
-![Untitled](Femto-Containers%20Lightweight%20Virtualization%20and%20Fa%20b0d8e45c41d4425097730c9f83f3c5a5/Untitled.png)
+![Untitled](imgs/Untitled.png)
 
 relate work
 
@@ -46,7 +47,7 @@ Benchmark
 
 在本节中，我们比较了使用RIOT [5]来扩展Femto-Container功能的概念验证的性能，基于不同的超轻量级隔离技术：Python（MicroPython运行时），WebAssembly（WASM3运行时），eBPF（rBPF运行时）和Javascript（RIOTjs运行时）。我们在一个现成的物联网硬件平台上运行每个虚拟化候选，该平台代表现代32位微控制器架构的景观：Arm CortexM4。基准测试设置的详细信息在附录A中。在下面的基准测试中，每个实现都加载了一个VM，该VM托管在360 B输入字符串上执行Fletcher32校验和逻辑。
 
-![Untitled](Femto-Containers%20Lightweight%20Virtualization%20and%20Fa%20b0d8e45c41d4425097730c9f83f3c5a5/Untitled%201.png)
+![Untitled](imgs/Untitled 1.png)
 
 为什么最后选了 eBPF?
 
@@ -54,7 +55,7 @@ Benchmark
 
 FEMTO-CONTAINER RUNTIME IMPLEMENTATION
 
-![Untitled](Femto-Containers%20Lightweight%20Virtualization%20and%20Fa%20b0d8e45c41d4425097730c9f83f3c5a5/Untitled%202.png)
+![Untitled](imgs/Untitled 2.png)
 
 Programming Model
 
@@ -64,7 +65,7 @@ Femto-Containers遵循事件驱动编程模型。托管的应用程序仅在操�
 针对要求的形式化。我们希望为微型容器提供的安全保障基本上是内存和故障隔离。更具体地说，我们想证明CertFC无法访问应用程序寄存器内存之外的内存位置，也无法执行导致未定义行为的指令，从而导致虚拟机和/或其主机崩溃。提供这些保证进一步加强了威胁模型所需的安全性，以防止访问沙箱外的内存，从而防止对操作系统或其他虚拟机的非特权访问。
 正式验证方法。我们使用Coq证明助手通过采用图6中描述的设计工作流程来机械化和全面验证这些要求：
 
-![Untitled](Femto-Containers%20Lightweight%20Virtualization%20and%20Fa%20b0d8e45c41d4425097730c9f83f3c5a5/Untitled%203.png)
+![Untitled](imgs/Untitled 3.png)
 
 1. 首先，我们提供了一个证明模型和一个 C-ready 实现，它们分别对 RIOT 中 rBPF 验证器和虚拟机的本地、原始 C 实现进行了形式化（响应地进行了优化）。在 Coq 中，证明和“C-ready”模型被证明是语义等价的。
 2. Coq 证明助手在 VM 的证明模型上执行了预期的安全性和隔离性属性的验证。它依赖于 a) CompCert C 内存模型 [24] ii) 验证器的预检运行时检查，以及 iii) 虚拟机本身的防御性运行时检查（针对数字和内存操作）提供的形式化隔离保证。
@@ -73,7 +74,7 @@ Femto-Containers遵循事件驱动编程模型。托管的应用程序仅在操�
 
 PERFORMANCE EVALUATION
 
-![Untitled](Femto-Containers%20Lightweight%20Virtualization%20and%20Fa%20b0d8e45c41d4425097730c9f83f3c5a5/Untitled%204.png)
+![Untitled](imgs/Untitled 4.png)
 
 结论
 

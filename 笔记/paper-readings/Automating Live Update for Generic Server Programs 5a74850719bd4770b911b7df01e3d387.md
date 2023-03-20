@@ -1,8 +1,4 @@
-# Automating Live Update for Generic Server Programs
-
-Status: Not started
-
-自动化通用服务器程序的实时更新
+# 论文阅读：自动化通用服务器程序的实时更新（热更新/动态更新？）
 
 [https://www.cs.vu.nl/~giuffrida/papers/tse-2016.pdf](https://www.cs.vu.nl/~giuffrida/papers/tse-2016.pdf)
 

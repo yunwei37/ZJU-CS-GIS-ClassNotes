@@ -1,3 +1,4 @@
+#! https://zhuanlan.zhihu.com/p/613032992
 # 论文阅读：Bringing WebAssembly to Resource-constrained IoT Devices for Seamless Device-Cloud Integration
 
 > 本文来自 eunomia-bpf 社区，我们正在探索 eBPF 和 WebAssembly 相互结合的工具链和运行时: <https://github.com/eunomia-bpf/wasm-bpf> 社区关注于简化 eBPF 程序的编写、分发和动态加载流程，以及探索 eBPF 和 Wasm 相结合的工具链、运行时和运用场景等技术。
@@ -28,7 +29,7 @@ challenges
 • 执行安全。执行安全对于设备-云集成计算方案至关重要。这是因为集成带来了更广泛的攻击面，除了由于在网络上传输代码而带来的性能提升。
 • 能源效率。物联网设备通常由电池供电，特别是那些在野外部署的设备。微小的能耗增加可能导致数天的寿命差异。因此，我们认识到能源效率是设计目标之一。
 
-![Untitled](Bringing%20WebAssembly%20to%20Resource-constrained%20IoT%20D%20e110fb3e795242cca3b12253a944a0d4/Untitled.png)
+![Untitled](imgs/Untitled.png)
 
 4.2 Two-phase sandbox checks
 

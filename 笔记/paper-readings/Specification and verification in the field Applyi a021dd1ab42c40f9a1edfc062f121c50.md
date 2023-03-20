@@ -1,4 +1,5 @@
-# 论文阅读：领域中的规范和验证：将形式化方法应用于 Linux 内核中的 BPF 即时编译器
+#! https://zhuanlan.zhihu.com/p/613458512
+# 论文阅读：将形式化方法应用于 Linux 内核中的 BPF 即时编译器
 
 > 本文来自 eunomia-bpf 社区，我们正在探索 eBPF 和 WebAssembly 相互结合的工具链和运行时: <https://github.com/eunomia-bpf/wasm-bpf> 社区关注于简化 eBPF 程序的编写、分发和动态加载流程，以及探索 eBPF 和 Wasm 相结合的工具链、运行时和运用场景等技术。
 

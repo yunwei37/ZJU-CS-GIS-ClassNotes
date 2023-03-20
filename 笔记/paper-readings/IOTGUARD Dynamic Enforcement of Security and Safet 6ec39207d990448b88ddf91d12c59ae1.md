@@ -1,6 +1,6 @@
 # 论文阅读：IOTGUARD: Dynamic Enforcement of Security and Safety Policy in Commodity IoT
 
-> 本文来自 eunomia-bpf 社区，我们正在探索 eBPF 和 WebAssembly 相互结合的工具链和运行时: <https://github.com/eunomia-bpf/wasm-bpf> 社区关注于简化 eBPF 程序的编写、分发和动态加载流程，以及探索 eBPF 和 Wasm 相结合的工具链、运行时和运用场景等技术。
+> 本文来自 eunomia-bpf 社区，我们正在探索 eBPF 和 WebAssembly 相互结合的工具链和运行时: <https://github.com/eunomia-bpf/eunomia-bpf> 社区关注于简化 eBPF 程序的编写、分发和动态加载流程，以及探索 eBPF 和 Wasm 相结合的工具链、运行时和运用场景等技术。
 
 ### 摘要
 
@@ -65,3 +65,5 @@ IOTGUARD实现了一种算法，可以找到IFTTT触发器-动作应用程序的
 最后，IOTGUARD的实现和评估仅基于SmartThings家庭自动化平台和IFTTT触发器动作平台应用程序。还有其他适合评估安全和安全性违规的IoT领域，如农业的FarmBeats[50]、医疗保健的HealthSaaS[23]、汽车工业的KaaIoT[29]、Zapier[53]和Microsoft Flow[35]的触发器动作平台。我们计划将IOTGUARD的算法扩展到这些平台，并参与对IoT市场和行业的大规模分析。
 
 本文介绍了一种名为IOTGUARD的系统，它可以动态执行IoT设备的安全和安全策略。该系统使用代码仪器对应用程序进行分析，并在操作之前插入插装代码以收集运行时信息。IOTGUARD还包括一个安全服务，用于保护用户免受不良设备状态的影响。该系统已在SmartThings平台上进行了实验，并计划将其扩展到其他IoT平台。
+
+> 本文来自 eunomia-bpf 社区，我们正在探索 eBPF 和 WebAssembly 相互结合的工具链和运行时: <https://github.com/eunomia-bpf/eunomia-bpf> 社区关注于简化 eBPF 程序的编写、分发和动态加载流程，以及探索 eBPF 和 Wasm 相结合的工具链、运行时和运用场景等技术。
